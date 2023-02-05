@@ -1,0 +1,14 @@
+@import url("reset.css");
+@import url("css/header.css");
+@import url("css/main.css");
+
+:root {
+  --font: "Times New Roman", Times, serif;
+  --cGrey: rgb(182, 182, 182);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}

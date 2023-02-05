@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  font-family: var(--font);
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 3%;
+}
+
+.navbar > *,
+.footer > * {
+  width: 100%;
+  display: flex;
+}
+
+.navbar > h1 {
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: default;
+}
+.navbar > div {
+  justify-content: right;
+}
+
+.navbar > nav > span,
+.navbar > div > span {
+  padding: 0 5%;
+}
+
+.navbar > div > span:first-child {
+  border-right: 1px solid var(--cGrey);
+}
+
+.navbar > nav > span > a,
+.navbar > div > span > a {
+  text-decoration: none;
+  color: black;
+}
+.navbar > nav > span > a:hover,
+.navbar > div > span > a:hover {
+  color: var(--cGrey);
+}
+
+footer {
+  height: fit-content;
+  bottom: 0;
+  background-color: var(--cGrey);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+.footer > i {
+  justify-content: center;
+}

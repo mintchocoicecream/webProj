@@ -16,13 +16,16 @@
 }
 
 .mainRestaurant > div:first-child {
-  background-image: url("https://as2.ftcdn.net/v2/jpg/02/27/35/43/1000_F_227354304_mLMmFNJKH7enSTOX38AVNPceqKziu9QW.jpg");
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/02/27/35/43/1000_F_227354304_mLMmFNJKH7enSTOX38AVNPceqKziu9QW.jpg"); */
+  background-color: pink;
 }
 .mainPlay > div:first-child {
-  background-image: url("https://t3.ftcdn.net/jpg/00/76/61/14/240_F_76611447_SuCC0sgdADSu3r3PsPfMXSBRCns4Kpqc.jpg");
+  /* background-image: url("https://t3.ftcdn.net/jpg/00/76/61/14/240_F_76611447_SuCC0sgdADSu3r3PsPfMXSBRCns4Kpqc.jpg"); */
+  background-color: antiquewhite;
 }
 .mainHotel > div:first-child {
-  background-image: url("https://as2.ftcdn.net/v2/jpg/02/27/35/43/1000_F_227354304_mLMmFNJKH7enSTOX38AVNPceqKziu9QW.jpg");
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/02/27/35/43/1000_F_227354304_mLMmFNJKH7enSTOX38AVNPceqKziu9QW.jpg"); */
+  background-color: darkseagreen;
 }
 
 .mainText,
@@ -33,4 +36,51 @@
 }
 .mainText > div {
   flex-direction: column;
+}
+
+.mainText > div > button {
+  cursor: pointer;
+  padding: 5px 8px;
+  margin-top: 1.2em;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.2em;
+  opacity: 0;
+  animation: showBtn 1.5s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+.mainText > div > h2,
+.mainText > div > h4 {
+  opacity: 0;
+  animation: showText 1.5s ease-in-out forwards;
+}
+.mainText > div > h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.mainText > div > h4 {
+  font-size: 1.5em;
+  animation-delay: 0.8s;
+  margin-top: 1em;
+}
+.mainText > div > button:hover {
+  background-color: bisque;
+  transition: all 0.3s ease-in-out;
+}
+@keyframes showText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showBtn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

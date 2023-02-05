@@ -1,9 +1,11 @@
 @import url("reset.css");
 @import url("css/header.css");
 @import url("css/main.css");
+@import url("css/login.css");
 
 :root {
   --font: "Times New Roman", Times, serif;
+  --fontKr: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --cGrey: rgb(182, 182, 182);
 }
 
@@ -11,4 +13,5 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
+  font-family: var(--font);
 }

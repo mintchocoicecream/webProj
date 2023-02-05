@@ -1,0 +1,84 @@
+#signIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#signIn > h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  opacity: 0;
+  margin-bottom: 5%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid var(--cGrey);
+  font-family: var(--fontKr);
+  animation: showTitle 1s ease-in-out forwards;
+}
+@keyframes showTitle {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.signInDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5%;
+  box-shadow: 0em 0.3em 0.5em 0.2em var(--cGrey);
+  opacity: 0;
+  animation: showLogin 1s ease-in-out forwards;
+}
+
+@keyframes showLogin {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.signInID,
+.signInPW {
+  display: flex;
+  margin: 3% 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.signInDiv > div > label {
+  margin-right: 5px;
+}
+.signInDiv > button,
+.signInID > input,
+.signInPW > input {
+  padding: 5px 8px;
+}
+.signInDiv > button {
+  width: 100%;
+  background-color: white;
+  border: none;
+}
+#btnSignin {
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+#btnSignin:hover {
+  background-color: pink;
+}
+
+.signInDiv > button:last-child > a {
+  color: black;
+}
+.signInDiv > button:last-child > a:hover {
+  color: var(--cGrey);
+}

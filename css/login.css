@@ -48,7 +48,8 @@
 
 .signInID,
 .signInPW,
-.signInPWchk {
+.signInPWchk,
+.signInNick {
   display: flex;
   margin: 3% 0;
   width: 100%;
@@ -58,23 +59,17 @@
   margin-right: 15px;
 }
 .signInDiv > button,
-.signInID > input,
-.signInPW > input,
-.signInPWchk> input {
+.signInDiv>div>input{
   padding: 5px 8px;
   transition: all .3s ease-in-out;
 }
 
-.signInID > input,
-.signInPW > input,
-.signInPWchk> input{
+.signInDiv>div>input{
   background-color: var(--lightGrey);
   border: 1px solid var(--lightGrey);
 }
 
-.signInID > input:focus,
-.signInPW > input:focus,
-.signInPWchk> input:focus {
+.signInDiv>div>input:focus {
   border: 1px solid black;
   outline: none;
 }

@@ -13,7 +13,7 @@
         <nav>
           <span><a href="../index.html">Home</a></span>
           <span><a href="./board.html">Board</a></span>
-          <span><a href="#">About</a></span>
+          <span><a href="./about.html">About</a></span>
         </nav>
         <h1>GO.ZIP</h1>
         <div>
@@ -26,7 +26,7 @@
       <h1>회원가입</h1>
       <div class="signInDiv">
         <div class="signInID">
-          <label for="email">ID: </label>
+          <label for="email">id: </label>
           <input type="email" id="email" placeholder="example@email.com" />
         </div>
         <div class="signInPW">
@@ -34,6 +34,15 @@
           <input
             type="password"
             id="password"
+            placeholder="********"
+            minlength="8"
+          />
+        </div>
+        <div class="signInPWchk">
+          <label for="passwordchk">password: </label>
+          <input
+            type="password"
+            id="passwordchk"
             placeholder="********"
             minlength="8"
           />

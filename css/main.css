@@ -64,7 +64,8 @@
   margin-top: 1em;
 }
 .mainText > div > button:hover {
-  background-color: bisque;
+  background-color: black;
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 @keyframes showText {

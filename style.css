@@ -2,10 +2,13 @@
 @import url("css/header.css");
 @import url("css/main.css");
 @import url("css/login.css");
+@import url("css/board.css");
+@import url("css/about.css");
 
 :root {
   --font: "Times New Roman", Times, serif;
   --fontKr: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --lightGrey:  rgb(230, 230, 230);
   --cGrey: rgb(182, 182, 182);
 }
 

@@ -43,7 +43,14 @@ header {
 .navbar > nav > span > a,
 .navbar > div > span > a {
   text-decoration: none;
+}
+.navbar > div > span > a,
+.navbar > nav > span > a:not(.navchk){
   color: black;
+}
+
+.navchk{
+  color: var(--cGrey);
 }
 .navbar > nav > span > a:hover,
 .navbar > div > span > a:hover {

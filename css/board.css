@@ -1,104 +1,105 @@
 #board {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.boardNav{
+.boardNav {
   margin-top: 50px;
-  box-shadow: 0 0 .5em 0em rgb(241, 241, 241);
+  box-shadow: 0 0 0.5em 0em rgb(241, 241, 241);
   display: flex;
   justify-content: space-between;
   padding: 1%;
 }
 
-.boardNav>span{
+.boardNav > span {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.boardNav>span:not(:last-child){
+.boardNav > span:not(:last-child) {
   border-right: 1px solid black;
 }
 
-.boardNav>span>a{
+.boardNav > span > a {
   text-decoration: none;
   padding: 8px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   font-weight: bold;
 }
 
-.boardNav>span>a:not(.currentNav){
+.boardNav > span > a:not(.currentNav) {
   border-top: 1px solid white;
   color: black;
 }
-.boardNav>span>a:hover{
+.boardNav > span > a:hover {
   border-top: 1px solid var(--cGrey);
   color: var(--cGrey);
 }
 
-.currentNav{
+.currentNav {
   color: pink;
   border-top: 1px solid pink;
 }
 
-.boardDiv{
+.boardDiv {
   width: 100%;
 }
 
-.boardDiv>.boardMuk{
-  padding: 3%;
+.boardMuk:not(.hidden),
+.boardPlay:not(.hidden),
+.boardJal:not(.hidden) {
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.boardMuk>.selects{
+.boardDiv > .selects {
   display: flex;
-  margin: 5px;
+  margin: 2% 5% 0 5%;
   justify-content: space-between;
 }
-.boardMuk>.selects>select{
+.boardDiv > .selects > select {
   padding: 3px;
   border: 1px solid var(--cGrey);
 }
 
-.boardMuk>.Muk{
+.boardMain > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  opacity:0;
+  opacity: 0;
   animation: showDiv 1s ease-in-out forwards;
 }
 
-.hidden{
-  display: none;
-}
-
 @keyframes showDiv {
-  from{
+  from {
     transform: translateY(50px);
-  }to{
+  }
+  to {
     opacity: 1;
   }
 }
 
-
-.boardMuk>.Muk>div:not(.pagination){
+.boardMain > div > div:not(.pagination) {
   width: 300px;
   height: 400px;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
-  margin: 5px;
+  margin: 15px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.boardMuk>.Muk>div:hover{
+.boardMain > div > div:hover {
   background-color: rgb(230, 230, 230);
 }
-.boardMuk>.Muk>div>.img{
+.boardMain > div > div > .img {
   width: 100%;
   height: 500px;
   background-color: aliceblue;
@@ -106,41 +107,47 @@
   position: relative;
   cursor: default;
 }
-.boardMuk>.Muk>div>.img>span{
+.boardMain > div > div > .img > span {
   position: absolute;
-  right:3%;
+  right: 3%;
   bottom: 3%;
   color: rgb(255, 43, 43);
   font-size: 1.2em;
   cursor: pointer;
 }
-.boardMuk>.Muk>div>.img>span:hover{
+.boardMain > div > div > .img > span:hover {
   animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 @keyframes heartbeat {
-  0%{}
-  50%{
+  0% {
+  }
+  50% {
     transform: scale(1.2);
   }
-  100%{}
+  100% {
+  }
 }
 
-.infos{
+.infos {
   display: flex;
   width: 100%;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   justify-content: space-around;
 }
-.infos>.title{
+.infos > .title {
   font-weight: bold;
 }
-.infos>.location{
+.infos > .location {
   font-size: 0.9em;
 }
-.infos>.rates,
-.infos>.reviewCnt{
+.infos > .rates,
+.infos > .reviewCnt {
   text-align: right;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,7 +1,6 @@
 #board {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
 }
 
@@ -63,6 +62,9 @@
 
 .boardMuk>.Muk{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   opacity:0;
   animation: showDiv 1s ease-in-out forwards;
 }
@@ -80,8 +82,8 @@
 }
 
 
-.boardMuk>.Muk>div{
-  width: 100%;
+.boardMuk>.Muk>div:not(.pagination){
+  width: 300px;
   height: 400px;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
@@ -94,14 +96,36 @@
   transition: all .3s ease-in-out;
 }
 .boardMuk>.Muk>div:hover{
-  background-color: rgb(255, 192, 202);
+  background-color: rgb(230, 230, 230);
 }
-.boardMuk>.Muk>div>img{
+.boardMuk>.Muk>div>.img{
   width: 100%;
   height: 500px;
   background-color: aliceblue;
   margin-bottom: 8px;
+  position: relative;
+  cursor: default;
 }
+.boardMuk>.Muk>div>.img>span{
+  position: absolute;
+  right:3%;
+  bottom: 3%;
+  color: rgb(255, 43, 43);
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.boardMuk>.Muk>div>.img>span:hover{
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%{}
+  50%{
+    transform: scale(1.2);
+  }
+  100%{}
+}
+
 .infos{
   display: flex;
   width: 100%;
@@ -120,4 +144,3 @@
 .infos>.reviewCnt{
   text-align: right;
 }
-

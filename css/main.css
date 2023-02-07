@@ -63,8 +63,15 @@
   animation-delay: 0.8s;
   margin-top: 1em;
 }
-.mainText > div > button:hover {
+.mainText > div > button>a{
+  text-decoration: none;
+  color: black;
+}
+.mainText > div > button:hover{
   background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+.mainText > div > button:hover a{
   color: white;
   transition: all 0.3s ease-in-out;
 }

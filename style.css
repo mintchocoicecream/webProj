@@ -4,6 +4,7 @@
 @import url("css/login.css");
 @import url("css/board.css");
 @import url("css/about.css");
+@import url("css/boardDetail.css");
 
 :root {
   --font: "Times New Roman", Times, serif;

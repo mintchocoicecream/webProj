@@ -5,6 +5,7 @@ var jalNav=nav.querySelector("span:last-child>a");
 var mukDiv=document.querySelector(".boardMuk");
 var nolDiv=document.querySelector(".boardPlay");
 var jalDiv=document.querySelector(".boardJal");
+var boardDiv=document.querySelector(".Muk>div");
 
 var className="currentNav";
 var hiddenClass="hidden";
@@ -34,3 +35,6 @@ jalNav.addEventListener('click', function(){
         jalDiv.classList.remove(hiddenClass);
 });
 
+boardDiv.addEventListener('click', function(){
+        location.href="../pages/boardDetail.html";
+})

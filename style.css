@@ -19,3 +19,12 @@ body {
   position: relative;
   font-family: var(--font);
 }
+
+@keyframes showDiv {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -3,4 +3,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5% 10%;
+    opacity: 0;
+    animation: showDiv 1s ease-in-out forwards;
 }
+
+#boardDetail>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.boardInfos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailDiv{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detailDiv>.detailContainer{
+    display: flex;
+    width: 100%;
+}
+.detailDiv>.detailContainer>div{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.boardReview{
+    margin-top: 5%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.detailImg{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+}
+.detailImg>img{
+    width: 500px;
+    height: 350px;
+    background-color: aliceblue;
+}
+
+

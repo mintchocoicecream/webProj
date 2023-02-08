@@ -1,6 +1,6 @@
 #boardDetail {
   height: 100vh;
-  margin-top: 10%;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,6 +104,7 @@
 .boardReview > .reviews {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   padding: 8px 0;
 }

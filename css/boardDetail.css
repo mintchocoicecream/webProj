@@ -1,58 +1,156 @@
-#boardDetail{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10%;
-    opacity: 0;
-    animation: showDiv 1s ease-in-out forwards;
+#boardDetail {
+  height: 100vh;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1% 10%;
+  padding-bottom: 8%;
+  opacity: 0;
+  animation: showDiv 1s ease-in-out forwards;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#boardDetail>div{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+#boardDetail > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
-.boardInfos{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.detailDiv{
-    display: flex;
-    padding: 8px;
-    flex-direction: column;
-    width: 100%;
+.boardInfos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.detailDiv>.detailContainer{
-    display: flex;
-    width: 100%;
-}
-.detailDiv>.detailContainer>div{
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    align-items: center;
+.detailDiv {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
 }
 
-.boardReview{
-    margin-top: 5%;
-    width: 100%;
-    background-color: bisque;
+.detailDiv > .detailExplain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-bottom: 1px solid grey;
+  margin-bottom: 18px;
 }
 
-.detailImg{
-    display: flex;
-    width: 100%;
-    padding: 8px;
+.detailDiv > .detailExplain > h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
-.detailImg>img{
-    width: 500px;
-    height: 350px;
-    background-color: aliceblue;
+.detailDiv > .detailExplain > h4 {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+.detailDiv > .detailExplain > span,
+.detailDiv > .detailExplain > div {
+  font-size: 1.1em;
+  margin-bottom: 15px;
 }
 
+.detailDiv > .detailExplain > div {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.detailDiv > .detailExplain > div > span {
+  background-color: black;
+  width: fit-content;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9em;
+}
+.detailDiv > .detailExplain > div > p {
+  font-size: 1em;
+}
 
+.detailDiv > .detailContainer {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  padding-top: 8px;
+}
+.detailDiv > .detailContainer > div {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 0 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.detailDiv > .detailContainer > div:hover {
+  background-color: pink;
+}
+
+.boardReview {
+  margin-top: 5%;
+  width: 100%;
+}
+.boardReview > h2 {
+  padding: 3px 5px;
+  background-color: rgb(233, 233, 233);
+}
+.boardReview > .reviews {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.reviews > button {
+  background-color: white;
+  height: fit-content;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.reviews > button:hover {
+  color: pink;
+}
+
+.reviews > .reviewCarousel {
+  display: flex;
+  overflow: hidden;
+}
+.reviewCarousel > .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  padding: 5px 8px;
+  margin: 0 8px;
+}
+.reviewCarousel > .review > img {
+  background-color: aliceblue;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.reviewCarousel > .review > p {
+  margin: 8px 0;
+  margin-top: 15px;
+  text-align: center;
+}
+.detailImg {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+}
+.detailImg > img {
+  width: 500px;
+  height: 350px;
+  background-color: aliceblue;
+}

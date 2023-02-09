@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>GO.ZIP | MYPAGE</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-          <nav>
-            <span><a href="../index.html">Home</a></span>
-            <span><a href="./board.html">Board</a></span>
-            <span><a href="./about.html">Q&A</a></span>
-          </nav>
-          <h1>GO.ZIP</h1>
-          <div>
-            <span><a href="./login.html">Sign In</a></span>
-            <span><a href="./signup.html">Sign Up</a></span>
-          </div>
+      <div class="navbar">
+        <nav>
+          <span><a href="../index.html">Home</a></span>
+          <span><a href="./board.html">Board</a></span>
+          <span><a href="./about.html">Q&A</a></span>
+        </nav>
+        <h1>GO.ZIP</h1>
+        <div>
+          <span class="myPageBtn"><a href="#" class="navchk">MyPage</a></span>
+          <span class="logoutBtn"><a href="#">Logout</a></span>
         </div>
-      </header>
-      <div id="main">
-        Mypage
       </div>
-      <footer>
-        <div class="footer">
-          <p>&copy; by mintchocoicecream 2023</p>
-          <i>github</i>
-          <p></p>
+    </header>
+    <div id="myPage">
+      <h2>마이페이지</h2>
+      <div class="myPageMain">
+        <div class="myPageNav">
+          <span><a href="#" class="myPageChk">내 정보</a></span>
+          <span><a href="#">찜 목록</a></span>
+          <span><a href="#">리뷰 목록</a></span>
+          <span><a href="#">내 장소</a></span>
         </div>
-      </footer>
-</body>
+        <div class="myPageInfo">
+          <div class="myInfo">
+            <div class="showMyInfo">
+              <div class="myId">
+                <label for="myInfoId">아이디</label>
+                <input
+                  type="email"
+                  name=""
+                  id="myInfoId"
+                  value="김작성"
+                  readonly
+                />
+              </div>
+              <div class="myPw">
+                <label for="myInfoPw">비밀번호</label>
+                <input
+                  type="password"
+                  name=""
+                  id="myInfoPw"
+                  value="********"
+                  readonly
+                />
+              </div>
+              <div class="myNick">
+                <label for="myInfoNick">닉네임</label>
+                <input type="text" id="myInfoNick" value="테스트" readonly />
+              </div>
+              <div class="myLoca">
+                <label for="myInfoLocation">지역</label>
+                <input
+                  type="text"
+                  name=""
+                  id="myInfoLocation"
+                  value="부산시 동구"
+                  readonly
+                />
+              </div>
+              <div class="myEditBtn">
+                <button>내 정보 수정하기</button>
+              </div>
+            </div>
+            <div class="EditMyInfo myHidden"></div>
+          </div>
+          <div class="myHearts myHidden"></div>
+          <div class="myReviews myHidden"></div>
+          <div class="myPlaces myHidden"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>&copy; by mintchocoicecream 2023</p>
+        <i>github</i>
+        <p></p>
+      </div>
+    </footer>
+    <script src="../nav.js"></script>
+  </body>
 </html>

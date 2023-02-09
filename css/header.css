@@ -44,7 +44,7 @@ header {
 .navbar > div > span > a {
   text-decoration: none;
 }
-.navbar > div > span > a,
+.navbar > div > span > a:not(.navchk),
 .navbar > nav > span > a:not(.navchk) {
   color: black;
 }

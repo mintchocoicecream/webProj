@@ -36,7 +36,7 @@ table,
   align-items: center;
 }
 .pagination {
-  margin: 3% 0;
+  margin-top: 5%;
 }
 .pagination,
 .pagination > ul {

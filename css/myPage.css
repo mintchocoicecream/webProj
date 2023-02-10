@@ -60,30 +60,37 @@
   padding: 2% 8%;
 }
 
-.myPageInfo > .myInfo > .showMyInfo {
+.myPageInfo > .myInfo > div:not(.myHidden) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.showMyInfo > div:not(.myEditBtn) {
+.myInfo > div > div:not(.myEditBtn) {
   display: flex;
   width: 100%;
   margin-bottom: 3%;
   justify-content: center;
   align-items: center;
 }
-.showMyInfo > div > label {
+.myInfo > div > div > label {
   margin-right: 5%;
   width: 100px;
 }
-.showMyInfo > div > input {
+.myInfo > div > div > input,
+.myInfo > div > div > select {
   width: 200px;
   padding: 5px;
   border: none;
+  font-size: 1em;
   background-color: rgb(230, 230, 230);
 }
+
+.myInfo > div > div > select{
+  width: 210px;
+}
+
 .myEditBtn > button {
   background-color: black;
   color: white;

@@ -53,14 +53,14 @@
   justify-content: center;
 }
 
-.myPageInfo > .myInfo {
+.myPageInfo > div {
   border: 1px solid grey;
   width: 100%;
   margin: 0 15%;
   padding: 2% 8%;
 }
 
-.myPageInfo > .myInfo > div:not(.myHidden) {
+.myPageInfo > .myInfo > div:not(.myInfoHidden) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +87,7 @@
   background-color: rgb(230, 230, 230);
 }
 
-.myInfo > div > div > select{
+.myInfo > div > div > select {
   width: 210px;
 }
 
@@ -108,6 +108,8 @@
   color: white;
   border-bottom: 1px solid white;
 }
-.myHidden {
+
+.myHidden,
+.myInfoHidden {
   display: none;
 }

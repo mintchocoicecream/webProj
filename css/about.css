@@ -10,6 +10,7 @@
 
 #about > div {
   width: 100%;
+  opacity: 0;
   animation: showDiv 1s ease-in-out forwards;
 }
 
@@ -17,7 +18,7 @@
   font-weight: bold;
   font-size: 1.4em;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .qnaDiv {
@@ -26,6 +27,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.qnaDiv > div:first-child {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.qnaDiv > div:first-child > span > a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  padding: 5px 8px;
+  font-size: 11pt;
+  color: black;
+  background-color: rgb(234, 234, 234);
+}
+.qnaDiv > div:first-child > span > a:hover {
+  color: white;
+  background-color: black;
 }
 
 table,
@@ -96,4 +118,62 @@ thead > tr > th:nth-child(1) {
 }
 thead > tr > th:nth-child(2) {
   width: 50%;
+}
+
+.addQnaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.addQnaDivContent {
+  width: 700px;
+  padding: 2% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-top: 3%;
+}
+.addQnaDivContent > div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.addQnaDivContent > div:last-child {
+  justify-content: center;
+  margin-top: 8px;
+}
+.addQnaDivContent > div > label,
+.addQnaDivContent > div > input,
+.addQnaDivContent > div > select {
+  padding: 5px 8px;
+}
+.addQnaDivContent > div > label {
+  width: 200px;
+  background-color: var(--cGrey);
+  color: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-right: 5px;
+}
+.addQnaDivContent > div > select {
+  width: 182px;
+  margin: 0;
+}
+.addQnaDivContent > div > textarea {
+  width: 100%;
+}
+.addQnaDivContent button {
+  padding: 5px 8px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.addQnaDivContent button:hover {
+  background-color: var(--cGrey);
 }

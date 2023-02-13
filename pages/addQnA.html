@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>GO.ZIP | QnA</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <span><a href="../index.html">Home</a></span>
+          <span><a href="./board.html">Board</a></span>
+          <span><a href="./about.html" class="navchk">Q&A</a></span>
+        </nav>
+        <h1>GO.ZIP</h1>
+        <div>
+          <span class="myPageBtn"><a href="myPage.html">MyPage</a></span>
+          <span class="logoutBtn"><a href="#">Logout</a></span>
+        </div>
+      </div>
+    </header>
+    <div id="about">
+      <div class="addQnaDiv">
+        <h2>QnA</h2>
+        <div class="addQnaDivContent">
+          <div>
+            <label for="addWriter">작성자</label>
+            <input type="text" id="addWriter" />
+          </div>
+          <div>
+            <label for="addCategory">카테고리</label>
+            <select name="" id="addCategory">
+              <option value="" selected>--------- 선택 --------</option>
+              <option value="addRequest">개선 요청</option>
+              <option value="addQuestion">질문</option>
+              <option value="addQuestion">기타</option>
+            </select>
+          </div>
+          <div>
+            <label for="addTitle">제목</label>
+            <input type="text" id="addTitle" />
+          </div>
+          <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <button>제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>&copy; by mintchocoicecream 2023</p>
+        <i>github</i>
+        <p></p>
+      </div>
+    </footer>
+    <script src="../nav.js"></script>
+  </body>
+</html>

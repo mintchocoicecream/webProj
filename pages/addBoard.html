@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Add Board</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <span><a href="../index.html">Home</a></span>
+          <span><a href="./board.html" class="navchk">Board</a></span>
+          <span><a href="./about.html">Q&A</a></span>
+        </nav>
+        <h1>GO.ZIP</h1>
+        <div>
+          <span class="myPageBtn"><a href="myPage.html">MyPage</a></span>
+          <span class="logoutBtn"><a href="#">Logout</a></span>
+        </div>
+      </div>
+    </header>
+    <div id="board">
+      <div class="boardNav">
+        <span><a class="currentNav" href="#">Muk.zip</a></span>
+        <span><a href="#">Nol.zip</a></span>
+        <span><a href="#">Jal.zip</a></span>
+      </div>
+      <div class="boardAdd">
+        <h2>장소 추가 요청</h2>
+        <div class="boardAddDiv">
+          <div>
+            <label for="">카테고리</label>
+            <select name="" id="addCategory">
+              <option value="muk">Muk.zip</option>
+              <option value="nol">Nol.zip</option>
+              <option value="jal">Jal.zip</option>
+            </select>
+          </div>
+          <div>
+            <label for="">장소명</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="">지역</label>
+            <select name="locationArr" id="">
+              <option value="default" selected>--지역선택--</option>
+              <option value="gangseogu">강서구</option>
+              <option value="geumjung">금정구</option>
+              <option value="gijang">기장군</option>
+              <option value="south">남구</option>
+              <option value="east">동구</option>
+              <option value="dongrae">동래구</option>
+              <option value="jingu">부산진구</option>
+              <option value="north">북구</option>
+              <option value="sasangu">사상구</option>
+              <option value="sahagu">사하구</option>
+              <option value="west">서구</option>
+              <option value="suyeong">수영구</option>
+              <option value="yeonje">연제구</option>
+              <option value="yeongdo">영도구</option>
+              <option value="center">중구</option>
+              <option value="haeundae">해운대구</option>
+            </select>
+          </div>
+          <div>
+            <label for="">대표메뉴</label>
+            <input type="text" minlength="1" />
+            <input type="text" />
+            <input type="text" />
+          </div>
+          <div>
+            <button>제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>&copy; by mintchocoicecream 2023</p>
+        <i>github</i>
+        <p></p>
+      </div>
+    </footer>
+    <script src="../nav.js"></script>
+    <script src="../js//addBoard.js"></script>
+  </body>
+</html>

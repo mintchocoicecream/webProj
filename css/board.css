@@ -139,6 +139,29 @@
   text-align: right;
 }
 
+.boardWriteBtn {
+  width: fit-content;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
+.boardWriteBtn > span > a {
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: white;
+  padding: 5px 14px;
+  border: 3px solid pink;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px rgb(219, 187, 193);
+  transition: all 0.3s ease-in-out;
+}
+
+.boardWriteBtn > span > a:hover {
+  color: white;
+  background-color: pink;
+}
+
 .hidden {
   display: none;
 }

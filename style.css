@@ -6,6 +6,7 @@
 @import url("css/about.css");
 @import url("css/myPage.css");
 @import url("css/boardDetail.css");
+@import url("css/addBoard.css");
 
 :root {
   --font: "Times New Roman", Times, serif;

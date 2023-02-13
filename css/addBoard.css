@@ -1,0 +1,75 @@
+.boardAdd {
+  margin: 2%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: showDiv 1s ease-in-out forwards;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.boardAdd > h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.boardAdd > .boardAddDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+  padding: 3% 8%;
+  border: 2px solid black;
+}
+
+.boardAdd > .boardAddDiv > div:not(.hiddenAdd) {
+  width: 600px;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+.boardAdd > .boardAddDiv > div > label {
+  display: flex;
+  align-items: center;
+  background-color: var(--cGrey);
+  width: 200px;
+  margin-right: 5px;
+  padding: 5px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+}
+.boardAdd > .boardAddDiv > div > select {
+  padding: 3px;
+  width: 105px;
+}
+.boardAdd > .boardAddDiv > div:nth-child(2) > input {
+  width: 205px;
+}
+.boardAdd > .boardAddDiv > div:nth-child(4) > input {
+  width: 100px;
+  margin-right: 5px;
+}
+.boardAdd > .boardAddDiv > div:last-child {
+  justify-content: center;
+  margin-top: 15px;
+}
+.boardAdd > .boardAddDiv button {
+  padding: 5px 8px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.boardAdd > .boardAddDiv button:hover {
+  background-color: pink;
+}
+
+.hiddenAdd {
+  display: none;
+}
